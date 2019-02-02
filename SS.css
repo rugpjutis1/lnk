@@ -1,0 +1,230 @@
+h1
+	{
+	font-size: 1.1rem;
+	}
+h2, h3
+	{
+	font-size: 1.3rem;
+	}
+dd, td, a, small
+	{
+	font-size: 0.8rem;
+	}
+a, dt
+	{
+	color: #FFF;
+	}
+h2, h3
+	{
+	color: #JJJ;
+	}
+dd
+	{
+	color: #FFF;
+	}
+*
+	{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+	text-overflow: ellipsis;
+	text-align: center;
+	vertical-align: middle;
+	}
+body
+	{
+	border: 20px solid #202020;
+	background: url('coverleaf.png');
+	background-position: top;
+	background-size: cover;
+	display: grid;
+	grid-template-columns: auto 50vmin auto;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	min-width: 100vw;
+	}
+header
+	{
+	position: relative;
+	display: flex;
+	align-content: center;
+	align-self: center;
+	justify-content: center;
+	border-radius: 50%;
+	box-shadow: 0 0 5px black;
+	background: radial-gradient(black 10%, DarkGreen 90%);
+	height: 50vmin;
+	width: 50vmin;
+	}
+h1
+	{
+	margin: auto;
+	filter: blur(9vmin);
+	color: LimeGreen;
+	width: 40vmin;
+	}
+header img
+	{
+	position: absolute;
+	width: 50vmin;
+	height: 50vmin;
+	}
+figure
+	{
+	margin: auto;
+	width: 500px;
+	position: absolute;
+	top: 10vh;
+	left: 0;
+	right: 0;
+	}
+.logo
+	{
+	display: block;
+	width: 500px;
+	height: auto;
+	}
+.pirmas 
+	{
+	display: grid;
+	grid-template-columns: repeat(8, 9vmin);
+	grid-template-rows: repeat(8, 9vmin);
+	grid-gap: 0;
+	grid-template-areas: 	"AA . . . . . . ."
+							"BB . . . . . . ."
+							"CC . . . . . . ."
+							"DD FF GG HH . QQ EE NN"
+							". . . II . WW . ."
+							"MM LL KK JJ . YY . ."
+							"OO . . . . XX . ."
+							"PP RR SS TT UU VV . .";
+	}
+	.AA { grid-area: AA; }
+	.BB { grid-area: BB; }
+	.CC { grid-area: CC; }
+	.DD { grid-area: DD; }
+	.FF { grid-area: FF; }
+	.GG { grid-area: GG; }
+	.HH { grid-area: HH; }
+	.II { grid-area: II; }
+	.JJ { grid-area: JJ; }
+	.KK { grid-area: KK; }
+	.LL { grid-area: LL; }
+	.MM { grid-area: MM; }
+	.OO { grid-area: OO; }
+	.PP { grid-area: PP; }
+	.RR { grid-area: RR; }
+	.SS { grid-area: SS; }
+	.TT { grid-area: TT; }
+	.UU { grid-area: UU; }
+	.VV { grid-area: VV; }
+	.QQ { grid-area: QQ; }
+	.WW { grid-area: WW; }
+	.YY { grid-area: YY; }
+	.XX { grid-area: XX; }
+	.EE { grid-area: EE; }
+	.NN { grid-area: NN; }
+.antras
+	{
+	display: grid;
+	grid-template-columns: repeat(8, 9vmin);
+	grid-template-rows: repeat(8, 9vmin);
+	grid-gap: 0;
+	grid-template-areas:	". . . . . . . AAA"
+							". . . . . . . BBB"
+							". . . . . . . CCC"
+							"ZZZ UUU TTT . GGG FFF EEE DDD"
+							". . SSS . HHH . . ."
+							". . RRR . III JJJ YYY KKK"
+							". . WWW . . . . LLL"
+							". . VVV QQQ PPP OOO NNN MMM";
+	}
+	.AAA { grid-area: AAA; }
+	.BBB { grid-area: BBB; }
+	.CCC { grid-area: CCC; }
+	.DDD { grid-area: DDD; }
+	.EEE { grid-area: EEE; }
+	.FFF { grid-area: FFF; }
+	.GGG { grid-area: GGG; }
+	.HHH { grid-area: HHH; }
+	.III { grid-area: III; }
+	.JJJ { grid-area: JJJ; }
+	.YYY { grid-area: YYY; }
+	.KKK { grid-area: KKK; }
+	.LLL { grid-area: LLL; }
+	.MMM { grid-area: MMM; }
+	.NNN { grid-area: NNN; }
+	.OOO { grid-area: OOO; }
+	.PPP { grid-area: PPP; }
+	.QQQ { grid-area: QQQ; }
+	.VVV { grid-area: VVV; }
+	.WWW { grid-area: WWW; }
+	.RRR { grid-area: RRR; }
+	.SSS { grid-area: SSS; }
+	.TTT { grid-area: TTT; }
+	.UUU { grid-area: UUU; }
+	.ZZZ { grid-area: ZZZ; }
+h1
+	{
+	transition: all 2s ease;
+	}
+h2, h3
+	{
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	border-radius: 6px;
+	border: thin solid #e0cea9;
+	height: 9vmin;
+	width: 9vmin;
+	transition: all 0.4s ease;
+	background: OldLace;
+	}
+button:focus h3
+	{
+	transform: translateY(-9vmin);
+	}
+button
+	{
+	outline: none;
+	border: none;
+	background: none;
+	overflow: hidden;
+	height: 9vmin;
+	width: 9vmin;
+	}
+header:hover > h1
+	{
+	text-shadow: 0 0 5px LimeGreen;
+	filter: blur(0);
+	}
+header:focus > h1
+	{
+	text-shadow: 0 0 5px LimeGreen;
+	filter: blur(0);
+	}
+@media only screen and (max-width: 1024px) and (orientation: portrait)
+	{
+	body
+		{
+		grid-template-columns: 100vw;
+		}
+	button, h2, h3
+		{
+		height: 15vmin;
+		width: 15vmin;
+		}
+	.pirmas, .antras
+		{
+		grid-template-columns: repeat(8, 15vmin);
+		grid-template-rows: repeat(8, 15vmin);
+		}
+	}
